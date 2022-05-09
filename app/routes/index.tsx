@@ -8,7 +8,7 @@ type LineItemProps = {
 };
 function LineItem({ icon, uri, media, handle }: LineItemProps) {
   return (
-    <li className="rounded border border-purple-300 p-2 hover:bg-purple-100 focus:bg-purple-100 text-slate-900 hover:text-purple-900 focus:text-purple-900 transition-colors">
+    <li className="rounded border border-purple-300 p-2 hover:bg-purple-100 focus:bg-purple-100 text-slate-900 hover:text-purple-900 focus:text-purple-900 transition-colors dark:text-slate-300 dark:hover:bg-purple-900 dark:hover:text-purple-300 dark:focus:bg-purple-900 dark:focus:text-purple-300">
       <a target="_blank" href={uri} rel="noreferrer">
         <div className="flex items-center ">
           <div className="mr-2 opacity-70">{icon}</div>
@@ -24,11 +24,11 @@ function LineItem({ icon, uri, media, handle }: LineItemProps) {
 
 export default function Index() {
   return (
-    <main className="flex flex-col items-center justify-start border-4 border-yellow-300 h-full rounded-md">
-      <h1 className="text-purple-900 font-bold text-center my-4 text-4xl">
+    <main className="flex flex-col items-center justify-start border-4 border-yellow-300 h-full rounded-md dark:bg-slate-900 dark:border-yellow-500">
+      <h1 className="text-purple-900 font-bold text-center my-4 text-4xl dark:text-purple-300">
         Thiago Temple
       </h1>
-      <h2 className="text-purple-900/75 text-center text-lg mb-2">
+      <h2 className="text-purple-900/75 text-center text-lg mb-2 dark:text-purple-500">
         Staff Engineer
       </h2>
       <ul className="px-2 grid md:grid-cols-2 gap-4 w-full lg:w-3/5 lg:max-w-7xl">
