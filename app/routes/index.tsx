@@ -156,6 +156,50 @@ export default function Index() {
           }
         />
         <LineItem
+          uri="https://www.pluralsight.com/authors/thiago-temple"
+          media="On-line Courses"
+          handle="thiago-temple"
+          icon={
+            <svg
+              className="h-8 w-8 "
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              strokeWidth="2"
+              stroke="currentColor"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              {" "}
+              <path stroke="none" d="M0 0h24v24H0z" />{" "}
+              <path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" />{" "}
+              <line x1="13" y1="8" x2="15" y2="8" />{" "}
+              <line x1="13" y1="12" x2="15" y2="12" />
+            </svg>
+          }
+        />
+        <LineItem
+          uri="https://bit.ly/thiago-temple-resume"
+          media="Resume"
+          handle="My resume"
+          icon={
+            <svg
+              className="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
+              />
+            </svg>
+          }
+        />
+        <LineItem
           uri="https://boardgamegeek.com/user/vintem"
           media="BoardGameGeek"
           handle="vintem"

@@ -501,12 +501,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2rem;
 }
 
+.h-6 {
+  height: 1.5rem;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-8 {
   width: 2rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .flex-col {
@@ -596,6 +604,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: inherit;
 }
 
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
 .opacity-70 {
   opacity: 0.7;
 }
@@ -632,16 +645,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(88 28 135 / var(--tw-text-opacity));
 }
 
-.hover\:focus\:bg-purple-100:focus:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity));
-}
-
-.hover\:focus\:text-purple-900:focus:hover {
-  --tw-text-opacity: 1;
-  color: rgb(88 28 135 / var(--tw-text-opacity));
-}
-
 @media (prefers-color-scheme: dark) {
   .dark\:border-yellow-500 {
     --tw-border-opacity: 1;
@@ -653,14 +656,9 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: rgb(15 23 42 / var(--tw-bg-opacity));
   }
 
-  .dark\:text-purple-200 {
+  .dark\:text-slate-300 {
     --tw-text-opacity: 1;
-    color: rgb(233 213 255 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-purple-400 {
-    --tw-text-opacity: 1;
-    color: rgb(192 132 252 / var(--tw-text-opacity));
+    color: rgb(203 213 225 / var(--tw-text-opacity));
   }
 
   .dark\:text-purple-300 {
@@ -671,11 +669,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .dark\:text-purple-500 {
     --tw-text-opacity: 1;
     color: rgb(168 85 247 / var(--tw-text-opacity));
-  }
-
-  .dark\:text-slate-300 {
-    --tw-text-opacity: 1;
-    color: rgb(203 213 225 / var(--tw-text-opacity));
   }
 
   .dark\:hover\:bg-purple-900:hover {
@@ -696,16 +689,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   .dark\:focus\:text-purple-300:focus {
     --tw-text-opacity: 1;
     color: rgb(216 180 254 / var(--tw-text-opacity));
-  }
-
-  .dark\:hover\:focus\:bg-purple-900:focus:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(88 28 135 / var(--tw-bg-opacity));
-  }
-
-  .dark\:hover\:focus\:bg-green-200:focus:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(187 247 208 / var(--tw-bg-opacity));
   }
 }
 
