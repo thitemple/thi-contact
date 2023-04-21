@@ -24,7 +24,7 @@ function LineItem({ icon, uri, media, handle }: LineItemProps) {
 
 export default function Index() {
   return (
-    <main className="flex flex-col items-center justify-start border-4 border-yellow-300 h-full rounded-md dark:bg-slate-900 dark:border-yellow-500">
+    <main className="flex flex-col items-center justify-start  h-full rounded-md dark:bg-slate-900">
       <h1 className="text-purple-900 font-bold text-center my-4 text-4xl dark:text-purple-300">
         Thiago Temple
       </h1>
