@@ -9,6 +9,7 @@ import {
 } from "@remix-run/react";
 
 import styles from "./tailwind.css";
+import Fathom from "./components/Fathom";
 
 export const links: LinksFunction = () => [{ rel: "stylesheet", href: styles }];
 
@@ -26,6 +27,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-screen">
+        <Fathom />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

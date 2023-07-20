@@ -54,9 +54,9 @@ export default function Index() {
           }
         />
         <LineItem
-          uri="https://templecoding.com"
+          uri="https://thecodingtemple.dev"
           media="Blog"
-          handle="templecoding.com"
+          handle="thecodingtemple.dev"
           icon={
             <svg
               className="h-8 w-8 text-inherit"
