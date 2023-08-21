@@ -1,40 +1,35 @@
 {
-  "name": "remix-template-netlify",
-  "private": true,
-  "description": "",
-  "license": "",
-  "sideEffects": false,
-  "scripts": {
-    "build": "run-s build:*",
-    "build:css": "npm run generate:css -- --minify",
-    "build:remix": "remix build",
-    "dev": "run-p dev:*",
-    "dev:css": "npm run generate:css -- --watch",
-    "dev:remix": "cross-env NODE_ENV=development netlify dev",
-    "generate:css": "npx tailwindcss -o ./app/tailwind.css",
-    "start": "cross-env NODE_ENV=production netlify dev"
-  },
-  "dependencies": {
-    "@netlify/functions": "^0.10.0",
-    "@remix-run/netlify": "^1.4.3",
-    "@remix-run/node": "^1.4.3",
-    "@remix-run/react": "^1.4.3",
-    "cross-env": "^7.0.3",
-    "fathom-client": "^3.5.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
-    "@remix-run/dev": "^1.4.3",
-    "@remix-run/eslint-config": "^1.4.3",
-    "@types/react": "^17.0.24",
-    "@types/react-dom": "^17.0.9",
-    "eslint": "^8.11.0",
-    "npm-run-all": "^4.1.5",
-    "tailwindcss": "^3.0.24",
-    "typescript": "^4.5.5"
-  },
-  "engines": {
-    "node": ">=14"
-  }
+	"name": "my-app",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"format": "prettier --plugin-search-dir . --write ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-netlify": "^2.0.8",
+		"@sveltejs/kit": "^1.20.4",
+		"@typescript-eslint/eslint-plugin": "^6.4.1",
+		"@typescript-eslint/parser": "^6.4.1",
+		"autoprefixer": "^10.4.14",
+		"eslint": "^8.28.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-svelte": "^2.30.0",
+		"postcss": "^8.4.24",
+		"postcss-load-config": "^4.0.1",
+		"prettier": "^3.0.2",
+		"prettier-plugin-svelte": "^3.0.3",
+		"svelte": "^4.0.5",
+		"svelte-check": "^3.4.3",
+		"tailwindcss": "^3.3.2",
+		"tslib": "^2.4.1",
+		"typescript": "^5.0.0",
+		"vite": "^4.4.2"
+	},
+	"type": "module"
 }
