@@ -128,16 +128,6 @@
 				<line x1="13" y1="12" x2="15" y2="12" />
 			</svg>
 		</LineItem>
-		<LineItem uri="https://bit.ly/thiago-temple-resume" media="Resume" handle="My resume">
-			<svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" slot="icon">
-				<path
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					stroke-width="2"
-					d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"
-				/>
-			</svg>
-		</LineItem>
 		<LineItem uri="https://boardgamegeek.com/user/vintem" media="BoardGameGeek" handle="vintem">
 			<svg
 				class="h-8 w-8 text-inherit"
